@@ -86,9 +86,6 @@ int main()
 		0, 370 / 3, 240 / 7,
 		0, 0, 1);
 
-	Matx33f knew = Matx33f(1, 0, 0,
-		0, 1, 0,
-		0, 0, 1);
 
 	omnidir::undistortImage(dist, undistorted, K, D, xi, flag1, Knew, cv::Size(780, 250));
 	//fisheye::undistortImage(dist, undistort, k,d,k, cv::Size(1500, 800));
